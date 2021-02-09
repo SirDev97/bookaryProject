@@ -10,7 +10,97 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      
+      <div class="container">
+          <div class="row">
+              <!-- Main Content Area-->
+              <div class="col-md-8">
+                <div class="text text-1 responsive my-5">B</div>
+                <div class="text text-2 responsive my-5">O</div>
+                <div class="text text-3 responsive my-5">O</div>
+                <div class="text text-4 responsive my-5">K</div>
+                <div class="text text-1 responsive my-5">A</div>
+                <div class="text text-2 responsive my-5">R</div>
+                <div class="text text-3 responsive my-5">Y</div>
+                <div class="text text-4 responsive my-5">.</div>
+                  <div class="card mb-4">
+                    <h2 class="card-header" id="fileName">Book Title</h2>
+                    <div class="card-body">
+                        <div class="displayBox scrollBox" id="fileContent">
+                            Select a book on the right
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a href="https://github.com/SirDev97" target="_blank" rel="noopener noreferrer">My Github</a>
+                    </div>
+                  </div>
+              </div>
+              <!-- SideBar Content-->
+              <div class="col-md-4">
+                  <!-- Search Widget -->
+                  <div class="card my-5">
+                      <h5 class="card-header">Search</h5>
+                      <div class="card-body">
+                          <div class="input-group">
+                              <input type="text" class="form-control" id="keyword" placeholder="Search for...">
+                              <span class="input-group-btn">
+                                  <button class="btn btn-secondary" type="button">Search</button>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="card-footer" id="searchStat"></div>
+                  </div>
+                  <!-- Select a Book Widget-->
+                  <div class="card my-5">
+                      <h5 class="card-header">Select a Book</h5>
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <ul class="list-unstyled mb-0">
+                                      <li><a href="#">Harry Poter</a></li>
+                                      <li><a href="#">Alice in Wonderland</a></li>
+                                      <li><a href="#">Lord of the Rings</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Most Used Words-->
+                  <div class="card my-5">
+                      <h5 class="card-header">Most Used Words</h5>
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <ul class="list-unstyled mb-0" id="mostUsed"></ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                <!-- Least Used Words -->
+                <div class="card my-5">
+                    <h5 class="card-header">Least Used Words</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul class="list-unstyled mb-0" id="leastUsed"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Document Stats-->
+                <div class="card my-5">
+                                    <h5 class="card-header">Document Stats</h5>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li id="docLength"></li>
+                            <li id="wordCount"></li>
+                            <li id="charCount"></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <!-- End of SideBar Content-->
+          </div>
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
