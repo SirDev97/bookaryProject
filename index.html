@@ -22,7 +22,7 @@
                 <div class="text text-2 responsive my-5">R</div>
                 <div class="text text-3 responsive my-5">Y</div>
                 <div class="text text-4 responsive my-5">.</div>
-                  <div class="card mb-4">
+                  <div class="card md-4">
                     <h2 class="card-header" id="fileName">Book Title</h2>
                     <div class="card-body">
                         <div class="displayBox scrollBox" id="fileContent">
@@ -43,7 +43,7 @@
                           <div class="input-group">
                               <input type="text" class="form-control" id="keyword" placeholder="Search for...">
                               <span class="input-group-btn">
-                                  <button class="btn btn-secondary" type="button">Search</button>
+                                  <button class="btn btn-secondary mx-1" type="button">Search</button>
                               </span>
                           </div>
                       </div>
@@ -56,9 +56,9 @@
                           <div class="row">
                               <div class="col-md-12">
                                   <ul class="list-unstyled mb-0">
-                                      <li><a href="#">Harry Poter</a></li>
-                                      <li><a href="#">Alice in Wonderland</a></li>
-                                      <li><a href="#">Lord of the Rings</a></li>
+                                      <li><a href="#" onclick="loadBook('JekyllAndHyde.txt','Dr. Jekyll and Mr. Hyde')">Jekyll And Hyde</a></li>
+                                      <li><a href="#" onclick="loadBook('AliceInWonderland.txt','Alice in Wonderland')">Alice in Wonderland</a></li>
+                                      <li><a href="#" onclick="loadBook('LOTR.txt','Lord of the Rings')">Lord of the Rings</a></li>
                                   </ul>
                               </div>
                           </div>
@@ -101,7 +101,8 @@
               <!-- End of SideBar Content-->
           </div>
       </div>
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
+    <script src="searchString.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
